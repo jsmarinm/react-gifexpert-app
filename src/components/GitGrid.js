@@ -1,5 +1,6 @@
 import React from 'react'
 import { useFetchGifts } from '../hooks/useFetchGifs';
+import PropTypes from 'prop-types';
 
 import { GitGridItem } from './GitGridItem';
 
@@ -24,4 +25,8 @@ export const GitGrid = ({category}) => {
         </div>    
     </>
   )
+};
+
+GitGrid.propTypes = {
+    category: PropTypes.string.isRequired
 }

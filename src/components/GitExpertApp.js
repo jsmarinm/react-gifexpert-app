@@ -4,11 +4,11 @@ import { useState } from "react";
 import { AddCategory } from "./AddCategory";
 import { GitGrid } from "./GitGrid";
 
-const GitExpertApp = () => {
+const GitExpertApp = ({ defaultCategories = [] }) => {
 
     // const categories = ['One Punch', 'Samurai X', 'Dragon Ball'];
 
-    const [categories, setCategories] = useState(['Dragon Ball']);
+    const [categories, setCategories] = useState(defaultCategories);
 
     // const handleAdd = () => {
 
